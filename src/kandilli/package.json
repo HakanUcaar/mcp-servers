@@ -1,0 +1,39 @@
+{
+  "name": "@hakan.ucar/kandilli-mcp",
+  "version": "0.0.5",
+  "description": "Kandilli Rasathanesi üzerinden son depremleri sorgulamak için bir Model Context Protocol (MCP) aracıdır",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "hangikredi-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "kandilli",
+    "son-depremler",
+    "deprem",
+    "deprem-api",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "author": "Hakan Uçar",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.8.0",
+    "cheerio": "^1.0.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.0.0"
+  }
+}

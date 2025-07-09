@@ -1,0 +1,43 @@
+{
+  "name": "@hakan.ucar/tamamlayici-saglik-mcp",
+  "version": "0.0.10",
+  "description": "Tamamlayici saglik sitesi üzerinden tamamlayici saglik sorgulamak için bir Model Context Protocol (MCP) aracıdır",
+  "main": "dist/index.js",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },  
+  "bin": {
+    "tamamlayici-saglik-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/*.js",
+    "prepare": "npm run build",
+    "watch": "tsc --watch"
+  },
+  "keywords": [
+    "tamamlayici-saglik",
+    "sigorta",
+    "saglik-sigortasi",
+    "sigorta-api",
+    "mcp",
+    "model-context-protocol"
+  ],
+  "author": "Hakan Uçar",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.8.0",
+    "cheerio": "^1.0.0",
+    "html-entities": "^2.6.0",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "shx": "^0.3.4",
+    "typescript": "^5.0.0"
+  }
+}
